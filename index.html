@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Aluno: Guilherme Caleffi Pellens Pereira | RGM: 38400227 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona Games - O melhor site para suas platinas!</title>
+    <link rel="stylesheet" href="./Assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Detona</h1>
+            <h1><span>Games</span></h1>
+        </div>
+        <ul>
+            <a href="#"><li>Início</li></a>
+            <a href="./games.html"><li>Games</li></a>
+            <a href="./cadastro.html"><li>Inscreva-se</li></a>
+        </ul>
+    </header>
+    
+    <main>
+        <aside>
+            <h2><span>Conecte-se agora!</span><br>E venha dominar todos os jogos que deseja!</h2>
+            <p>
+                O melhor site para os caros gamers que desejam platinar e <span>DETONAR</span> os jogos que estão tirando sua paciência!
+            </p>
+            <form>
+                <input type="text" id="loginNome" placeholder="Nome" required>
+                <input type="email" id="loginEmail" placeholder="E-mail" required>
+                <input type="password" id="loginSenha" placeholder="Senha" required>
+                <input type="button" class="btn" value="Iniciar Sessão" onclick="validarLogin()">
+            </form>
+            <p id="loginErro" style="color: red; display: none;">Nome, e-mail ou senha incorretos. Por favor, verifique seus dados.</p>
+        </aside>
+
+        <div>
+            <img src="./Assets/imagens/john.png" alt="John-Marston">
+        </div>
+
+        <section>
+            <h3>Últimos <span>Usuários</span> Online</h3>
+            <table id="usuariosOnline">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Último Login</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script src="./Assets/javascript/script.js"></script>
+</body>
+</html>

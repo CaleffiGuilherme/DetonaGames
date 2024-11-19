@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona Games - Cadastro</title>
+    <link rel="stylesheet" href="./Assets/css/cadstyle.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Detona</h1>
+            <h1><span>Games</span></h1>
+        </div>
+        <ul>
+            <a href="./index.html"><li>Início</li></a>
+            <a href="./games.html"><li>Games</li></a>
+            <a href="#"><li>Inscreva-se</li></a>
+        </ul>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Preencha o <span>formulário </span>ao lado<br></h2>
+            <form id="cadastroForm">
+                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="email" id="email" placeholder="E-mail" required>
+                <input type="password" id="senha" placeholder="Senha" required>
+                <input type="text" id="telefone" placeholder="(xx) xxxx-xxxx" required>
+                <input type="number" id="idade" placeholder="Idade" required>
+                <input type="submit" value="Finalizar cadastro">
+            </form>
+
+            <div id="errorMessageCadastro" class="error-message"></div>
+            <div id="successMessageCadastro" class="success-message"></div>
+
+        </aside>
+
+        <article>
+            <img src="./Assets/imagens/honor.png" alt="Honor">
+        </article>
+
+        <button id="adminBtn">ADMIN</button>
+
+        <div id="adminForm" class="hidden">
+            <h3>Autentique-se</h3>
+            <form id="adminLoginForm">
+                <input type="text" id="adminUsername" placeholder="Usuário" required>
+                <input type="password" id="adminPassword" placeholder="Senha" required>
+                <input type="submit" value="Entrar">
+            </form>
+            <div id="errorMessageAdmin" class="error-message"></div>            
+        </div>
+    </main>
+
+    <script src="./Assets/javascript/cadastroscript.js"></script>
+</body>
+</html>

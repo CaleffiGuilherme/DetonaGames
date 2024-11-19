@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona Games - Admin</title>
+    <link rel="stylesheet" href="./Assets/css/admin.css">
+    <script src="./Assets/javascript/admin.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Detona <span>Games</span></h1>
+        </div>
+        <div id="back-button-container">
+            <button id="back-button">
+                <img src="./Assets/imagens/icone.png" alt="Voltar" />
+                Retornar
+            </button>
+        </div>
+    </header>
+    
+    <main>
+        <div><img src="./Assets/imagens/highhonor.png" alt="High-Honor"></div>
+        <aside>
+            <h2>Lista <span>de</span> Inscritos</h2>
+        </aside>
+
+        <h3>Editar</span> Usuários</h3>
+        
+        <table id="usuariosTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Idade</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="listaInscritos">
+                
+            </tbody>
+        </table>
+
+        <div id="editFormContainer" style="display:none;">
+            <h3>Editar Inscrito</h3>
+            <form id="editForm">
+                <input type="text" id="editNome" placeholder="Nome" required>
+                <input type="email" id="editEmail" placeholder="E-mail" required>
+                <input type="number" id="editIdade" placeholder="Idade" required>
+                <input type="text" id="editTelefone" placeholder="Telefone" required>
+                
+                <div style="display: flex; align-items: center;">
+                    <input type="password" id="editSenha" placeholder="Senha" required>
+                    <button type="button" id="toggleSenha" style="margin-left: 8px;">Mostrar</button>
+                </div>
+                
+                <input type="submit" value="Salvar Alterações">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
