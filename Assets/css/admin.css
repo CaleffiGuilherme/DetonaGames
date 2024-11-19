@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'marston';
+    font-weight: 300;
+    src: url(./fontes/Marston.otf);
+}
+
+@font-face {
+    font-family: 'marstongrossa';
+    src: url(./fontes/Marston\ Bold.otf);
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: 'marston';
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+tr {
+    background-color: rgb(16, 16, 16);
+    color: white;
+    font-size: 30px;
+    font-family: 'marston';
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-weight: 5000;
+    color: white;
+    font-size: 60px;
+    font-family: 'marstongrossa';
+    text-align: center;
+}
+
+.header-container h1 span {
+    color: rgb(195, 10, 10);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    padding: 0 55px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+#back-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#back-button {
+    background-color: #ff3d07;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'marston';
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#back-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#back-button:hover {
+    background-color: #d52d05;
+    transition: 0.3s all;
+}
+
+main {
+    margin-top: 140px;
+}
+
+h2 {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+img {
+    padding-top: 10px;
+    width: 170px;
+    height: 170px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #aaa;
+    font-size: 18px;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+}
+
+span {
+    color: rgb(195, 10, 10);
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff3d07;
+    color: white;
+    font-family: 'marston';
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d52d05;
+}
+
+#back-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+#back-button img {
+    width: 24px;
+    height: 24px;
+}
+
+#back-button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+#back-button:active {
+    transform: scale(0.9);
+}

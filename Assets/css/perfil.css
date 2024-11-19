@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'marston';
+    font-weight: 300;
+    src: url(./fontes/Marston.otf);
+}
+
+@font-face {
+    font-family: 'marstongrossa';
+    src: url(./fontes/Marston\ Bold.otf);
+}
+
+body {
+    background-color: rgb(34, 34, 34); /* Fundo escuro para tema de jogo */
+    color: white;
+    font-family: 'marston'; /* Fonte personalizada */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 5000;
+    color: white;
+    font-size: 40px;
+    font-family: 'marstongrossa';  /* Fonte personalizada */
+    text-align: center;
+}
+
+
+
+nav a {
+    color: white;
+    font-size: 34px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: black;
+    background-color: #e4e0d1;
+    padding: 5px;
+    border-radius: 4px;
+    transition: 0.3s all;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    padding: 0 55px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.header-container h1 {
+    color: white;
+    font-family: 'marstongrossa';
+    font-size: 40px;
+    margin: 0;
+}
+
+#back-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#back-button {
+    background-color: #ff3d07;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'marston';
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+#back-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#back-button:hover {
+    background-color: #d52d05;
+    transition: 0.3s all;
+}
+
+main {
+    margin-top: 120px;
+}
+
+h2 {
+    font-size: 40px;
+    color: #ffffff;
+
+}
+
+img {
+    padding-top: 10px;
+    width: 170px;
+    height: 170px;
+
+}
+
+#progress-table {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #231919;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#progress-table thead {
+    background-color: #1a0000;
+    color: #e4e0d1;
+    font-size: 45px;
+    font-family: 'marstongrossa';
+}
+
+#progress-table th,
+#progress-table td {
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    border-bottom: 1px solid #444;
+}
+
+#progress-table th {
+    text-align: center;
+}
+
+#progress-table tr {
+    background-color: #333; 
+}
+
+span {
+    color: rgb(195, 10, 10);
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff3d07;
+    color: white;
+    font-family: 'marston';
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d52d05;
+}
+
+#back-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+#back-button img {
+    width: 24px;
+    height: 24px;
+}
+
+#back-button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+#back-button:active {
+    transform: scale(0.9);
+}

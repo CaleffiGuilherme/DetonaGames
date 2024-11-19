@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'marston';
+    font-weight: 300;
+    src: url(./fontes/Marston.otf);
+}
+
+@font-face {
+    font-family: 'marstongrossa';
+    src: url(./fontes/Marston\ Bold.otf);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: 'marston';
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 85px;
+    padding: 0 55px;
+}
+
+.header-container {
+    flex-direction: column;
+    line-height: 0px;
+    font-size: 22px;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: white;
+    font-size: 34px;
+}
+
+a:hover {
+    color: rgb(219, 0, 0);
+    transition: 0.3s all;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 45px;
+    font-family: marstongrossa;
+}
+
+h3 {
+    font-size: 46px;
+    line-height: 45px;
+    font-family: marstongrossa;
+    padding-right: 180px;
+
+}
+
+span {
+    color: rgb(219, 0, 0);
+}
+
+p {
+    line-height: 20px;
+    max-width: 500px;
+    font-size: 25px;
+}
+
+img {
+    width: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font-family: "marston";
+}
+
+form [type="submit"] {
+    height: 50px;
+    width: 50%;
+    background-color: rgb(219, 14, 14);
+    color: white;
+    font-family: "marston";
+    font-size: 20px;
+}
+
+input {
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn {
+    padding: 25px 25px;
+    line-height: 2px;
+    font-size: 16px;
+    font-family: 'marston';
+    font-size: 30px;
+    color: white;
+    background-color: rgb(219, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3e0404;
+}
+
+#usuariosOnline {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px; 
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    margin-top: 20px; 
+}
+
+#usuariosOnline table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+}
+
+#usuariosOnline th, #usuariosOnline td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+#usuariosOnline th {
+    background-color: rgb(219, 0, 0);
+    font-weight: bold;
+}
+
+#usuariosOnline tr:hover {
+    background-color: rgba(219, 0, 0, 0.3);
+}
+
+#usuariosOnline td {
+    font-size: 14px;
+}
+
+#usuariosOnline td:last-child {
+    text-align: center;
+}
